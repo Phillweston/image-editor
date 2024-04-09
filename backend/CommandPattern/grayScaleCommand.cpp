@@ -1,6 +1,6 @@
 #include "grayScaleCommand.h"
 
-grayScaleCommand::grayScaleCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
+grayScaleCommand::grayScaleCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

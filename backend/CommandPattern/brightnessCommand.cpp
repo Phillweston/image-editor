@@ -1,7 +1,7 @@
 #include "brightnessCommand.h"
-#include "../utils.h"
+#include "../basic_utils.h"
 
-brightnessCommand::brightnessCommand(Image &image, int value) : image(image), value(value), pixelBuffer(image.getPixelBuffer()) {
+brightnessCommand::brightnessCommand(ImageOperate &image, int value) : image(image), value(value), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

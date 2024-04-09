@@ -6,7 +6,7 @@
 
 class contrastCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
     int contrastValue;
@@ -14,7 +14,7 @@ private:
     void contrast();
 
 public:
-    explicit contrastCommand(Image &image, int conrast);
+    explicit contrastCommand(ImageOperate &image, int conrast);
 
     void execute() override;
 

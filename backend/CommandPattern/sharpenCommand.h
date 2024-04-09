@@ -6,14 +6,14 @@
 
 class sharpenCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void sharpen();
 
 public:
-    explicit sharpenCommand(Image &image);
+    explicit sharpenCommand(ImageOperate &image);
 
     void execute() override;
 

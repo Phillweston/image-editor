@@ -6,14 +6,14 @@
 
 class rotateAntiClockwiseCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void rotateAnticlockwise();
 
 public:
-    explicit rotateAntiClockwiseCommand(Image &image);
+    explicit rotateAntiClockwiseCommand(ImageOperate &image);
 
     void execute() override;
 

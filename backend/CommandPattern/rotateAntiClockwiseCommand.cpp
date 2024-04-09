@@ -1,6 +1,6 @@
 #include "rotateAntiClockwiseCommand.h"
 
-rotateAntiClockwiseCommand::rotateAntiClockwiseCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()){
+rotateAntiClockwiseCommand::rotateAntiClockwiseCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()){
     backupPixelBuffer = pixelBuffer;
 }
 void rotateAntiClockwiseCommand::execute() {

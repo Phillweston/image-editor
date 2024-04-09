@@ -6,14 +6,14 @@
 
 class blurCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void blur();
 
 public:
-    explicit blurCommand(Image &image);
+    explicit blurCommand(ImageOperate &image);
 
     void execute() override;
 

@@ -6,14 +6,14 @@
 
 class edgeDetectCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void edgeDetect();
 
 public:
-    explicit edgeDetectCommand(Image &image);
+    explicit edgeDetectCommand(ImageOperate &image);
 
     void execute() override;
 

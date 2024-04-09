@@ -1,7 +1,7 @@
 #include "blurCommand.h"
 #include "utils.h"
 
-blurCommand::blurCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
+blurCommand::blurCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

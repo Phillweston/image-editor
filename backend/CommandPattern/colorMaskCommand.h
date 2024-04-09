@@ -6,7 +6,7 @@
 
 class colorMaskCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
     int r, g, b;
@@ -14,7 +14,7 @@ private:
     void colorMask();
 
 public:
-    explicit colorMaskCommand(Image &, int r, int g, int b);
+    explicit colorMaskCommand(ImageOperate &, int r, int g, int b);
 
     void execute() override;
 

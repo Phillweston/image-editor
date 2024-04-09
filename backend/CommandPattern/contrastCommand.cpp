@@ -1,7 +1,7 @@
 #include "contrastCommand.h"
-#include "../utils.h"
+#include "../basic_utils.h"
 
-contrastCommand::contrastCommand(Image &image, int contrastValue) : image(image), contrastValue(contrastValue), pixelBuffer(image.getPixelBuffer()) {
+contrastCommand::contrastCommand(ImageOperate &image, int contrastValue) : image(image), contrastValue(contrastValue), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

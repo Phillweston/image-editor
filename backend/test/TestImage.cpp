@@ -6,12 +6,12 @@
 class TestImage : public ::testing::Test {
 
 protected:
-    Image solid_pink;
-    Image solid_green;
-    Image alpha_yellow;
-    Image big;
-    Image not_uni;
-    Image mono_green;
+    ImageOperate solid_pink;
+    ImageOperate solid_green;
+    ImageOperate alpha_yellow;
+    ImageOperate big;
+    ImageOperate not_uni;
+    ImageOperate mono_green;
 
     TestImage() :
             solid_pink(PATH + "3x2_solid_pink.jpg"),

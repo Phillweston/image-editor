@@ -2,7 +2,7 @@
 #include "utils.h"
 #include "grayScaleCommand.h"
 
-edgeDetectCommand::edgeDetectCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
+edgeDetectCommand::edgeDetectCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

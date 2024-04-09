@@ -7,7 +7,7 @@
 class TestCommands : public ::testing::Test{
 
 protected:
-    Image not_uni;
+    ImageOperate not_uni;
 
     TestCommands(): not_uni(PATH + "not_uni.png"){}
 };

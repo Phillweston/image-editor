@@ -50,7 +50,7 @@ void MainWindow::on_actionOpen_triggered()
         tr("Open Image"), "", tr("Image Files (*.png *.jpg *.bmp)"));
 
     if(!imagePath.isEmpty()){
-        activeImage.reset(new Image(imagePath));
+        activeImage.reset(new ImageOperate(imagePath));
 
         if(activeImage->isValid()){
 
@@ -94,7 +94,7 @@ void MainWindow::on_actionOpen_triggered()
             ui->menuEdit->setEnabled(false);
             ui->menuFilters->setEnabled(false);
 
-            QMessageBox::critical(this, APP_NAME,
+            QMessageBox::critical(this, "Image Editor",
                                   "The image is not Valid.",
                                   QMessageBox::Ok);
         }
@@ -157,7 +157,7 @@ void MainWindow::on_actionSave_as_triggered()
                 ui->actionSave->setEnabled(false);
             }
             else{
-                QMessageBox::critical(this, APP_NAME,
+                QMessageBox::critical(this, "Image Editor",
                                       "The path is not valid. Please check the image format.",
                                       QMessageBox::Ok);
             }
@@ -389,7 +389,7 @@ void MainWindow::closeEvent(QCloseEvent *event){
 
     if(pendingSaveModifications && !ui->graphicsView->isHidden()){
 
-        QString title = APP_NAME;
+        QString title = "Image Editor";
         QString message = "<p>Any modifications not saved will be lost. Are you "
                           "sure to close Image Editor?</p>";
 
@@ -421,15 +421,15 @@ void MainWindow::on_actionSave_triggered()
 
 void MainWindow::on_actionAbout_Image_Editor_triggered()
 {
-    QString title = APP_NAME;
+    QString title = "Image Editor";
     QString msg = QString("<h2>%1</h2>")
             .arg(title);
     msg += QString("<p>"
         "Uni Project for <i>Programmazione</i> class teached by Marco Bertini.</p>"
         "<p>The Project aims to be a simple image editor with the use of filters and convolution matrixes.</p>"
         "<p>Powered by C++ and Qt5.</p>");
-    msg += QString("<p><b>Author: </b> <a href =%1>Jacopo Zecchi</a></p>")
-            .arg("https://github.com/Dartypier");
+    msg += QString("<p><b>Author: </b> <a href =%1>Phill Weston</a></p>")
+            .arg("https://github.com/Phillweston");
     msg += QString("<p><b>Version: </b>%1")
             .arg(APP_VERSION);
     msg += QString("<p><div>Icons made by <a href=%1 title=%2>Freepik</a> from <a href=%3 title=%4>www.flaticon.com</a></div></p>")

@@ -1,7 +1,7 @@
 #include "sharpenCommand.h"
 #include "utils.h"
 
-sharpenCommand::sharpenCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
+sharpenCommand::sharpenCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

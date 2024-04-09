@@ -6,7 +6,7 @@
 
 class scaleCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
     int backupW;
@@ -17,7 +17,7 @@ private:
     void scale();
 
 public:
-    scaleCommand(Image &image, int x, int y);
+    scaleCommand(ImageOperate &image, int x, int y);
 
     void execute() override;
 

@@ -6,14 +6,14 @@
 
 class flipYCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void flipY();
 
 public:
-    explicit flipYCommand(Image &image);
+    explicit flipYCommand(ImageOperate &image);
 
     void execute() override;
 

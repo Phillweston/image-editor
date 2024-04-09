@@ -7,14 +7,14 @@
 class flipXCommand : public ICommand {
 
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void flipX();
 
 public:
-    explicit flipXCommand(Image &image);
+    explicit flipXCommand(ImageOperate &image);
 
     void execute() override;
 

@@ -1,6 +1,6 @@
 #include "flipYCommand.h"
 
-flipYCommand::flipYCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
+flipYCommand::flipYCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

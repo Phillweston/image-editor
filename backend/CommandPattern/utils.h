@@ -5,6 +5,6 @@
 #include "../Pixel.h"
 #include "../Image.h"
 
-void applyKernel(double kernel[3][3], Image& image, std::vector<Pixel>& pixelBuffer);
+void applyKernel(double kernel[3][3], ImageOperate& image, std::vector<Pixel>& pixelBuffer);
 
 #endif

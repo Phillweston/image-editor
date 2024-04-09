@@ -4,7 +4,7 @@
 
 #include "colorMaskCommand.h"
 
-colorMaskCommand::colorMaskCommand(Image &image, int r, int g, int b) :
+colorMaskCommand::colorMaskCommand(ImageOperate &image, int r, int g, int b) :
         image(image), r(r), g(g), b(b) , pixelBuffer(image.getPixelBuffer()){
     backupPixelBuffer = pixelBuffer;
 }

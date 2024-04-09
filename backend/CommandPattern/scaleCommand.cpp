@@ -1,7 +1,7 @@
 #include "scaleCommand.h"
 #include <cmath>
 
-scaleCommand::scaleCommand(Image &image, int x, int y) : image(image), x(x), y(y), pixelBuffer(image.getPixelBuffer()) {
+scaleCommand::scaleCommand(ImageOperate &image, int x, int y) : image(image), x(x), y(y), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

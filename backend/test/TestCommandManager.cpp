@@ -9,7 +9,7 @@
 class TestCommandManager : public ::testing::Test {
 
 protected:
-    Image img;
+    ImageOperate img;
     CommandManager commandManager;
 
     TestCommandManager() :

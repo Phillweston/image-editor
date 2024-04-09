@@ -6,14 +6,14 @@
 
 class embossCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void emboss();
 
 public:
-    explicit embossCommand(Image &image);
+    explicit embossCommand(ImageOperate &image);
 
     void execute() override;
 

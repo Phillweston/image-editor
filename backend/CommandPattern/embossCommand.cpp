@@ -1,7 +1,7 @@
 #include "embossCommand.h"
 #include "utils.h"
 
-embossCommand::embossCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
+embossCommand::embossCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

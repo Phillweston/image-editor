@@ -9,7 +9,7 @@
 
 using namespace std;
 
-class Image {
+class ImageOperate {
 
 private:
     QImage rawImage; //stores backend data infos
@@ -25,10 +25,10 @@ private:
     void pureFilename();
 
 public:
-    explicit Image(const QString &path);
+    explicit ImageOperate(const QString &path);
 
     bool save(const QString &outPath, int quality = -1); //-1 auto compression //0-100 quality range
-    Image(Image &image) = delete;
+    ImageOperate(ImageOperate &image) = delete;
 
     QString getPath() const;
 

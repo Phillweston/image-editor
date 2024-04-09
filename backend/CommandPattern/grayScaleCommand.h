@@ -6,14 +6,14 @@
 
 class grayScaleCommand : public ICommand {
 private:
-    Image &image;
+    ImageOperate &image;
     std::vector<Pixel>& pixelBuffer;
     std::vector<Pixel> backupPixelBuffer;
 
     void grayScale();
 
 public:
-    explicit grayScaleCommand(Image &image);
+    explicit grayScaleCommand(ImageOperate &image);
 
     void execute() override;
 

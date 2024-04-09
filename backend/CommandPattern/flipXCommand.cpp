@@ -1,6 +1,6 @@
 #include "flipXCommand.h"
 
-flipXCommand::flipXCommand(Image &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
+flipXCommand::flipXCommand(ImageOperate &image) : image(image), pixelBuffer(image.getPixelBuffer()) {
     backupPixelBuffer = pixelBuffer;
 }
 

@@ -79,7 +79,7 @@ private:
     QGraphicsPixmapItem* pixmapItem;
     QGraphicsScene scene;
 
-    std::unique_ptr<Image> activeImage;
+    std::unique_ptr<ImageOperate> activeImage;
     CommandManager commandManager;
 
     bool pendingSaveModifications;

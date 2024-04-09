@@ -1,6 +1,6 @@
 #include "utils.h"
 
-void applyKernel(double kernel[3][3], Image& image, std::vector<Pixel>& pixelBuffer) {
+void applyKernel(double kernel[3][3], ImageOperate& image, std::vector<Pixel>& pixelBuffer) {
     int sumR;
     int sumG;
     int sumB;
