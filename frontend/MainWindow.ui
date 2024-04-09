@@ -30,7 +30,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -121,6 +121,10 @@
    <addaction name="actionZoomDec"/>
    <addaction name="actionZoom_Adapt"/>
    <addaction name="separator"/>
+   <addaction name="actionSelect"/>
+   <addaction name="actionHand_Drag"/>
+   <addaction name="actionText_Select"/>
+   <addaction name="actionDelete"/>
   </widget>
   <action name="actionOpen">
    <property name="text">
@@ -285,6 +289,51 @@
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionHand_Drag">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/resources/hand.png</normaloff>:/icons/resources/hand.png</iconset>
+   </property>
+   <property name="text">
+    <string>Hand Drag</string>
+   </property>
+  </action>
+  <action name="actionText_Select">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/resources/lasso.png</normaloff>:/icons/resources/lasso.png</iconset>
+   </property>
+   <property name="text">
+    <string>Text Select</string>
+   </property>
+   <property name="toolTip">
+    <string>Text Select</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/resources/delete.png</normaloff>:/icons/resources/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="toolTip">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionSelect">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/icons/resources/select.png</normaloff>:/icons/resources/select.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select</string>
+   </property>
+   <property name="toolTip">
+    <string>Select</string>
    </property>
   </action>
  </widget>
